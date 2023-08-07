@@ -761,6 +761,10 @@ div.modal-content form.modal-content div:hover {
   color: var(--link-active-color);
 }
 /*-------mobile----*/
+div.js-menu-container {
+  display: none;
+}
+
 body div.js-menu-container {
   display: flex;
   flex-direction: column;
