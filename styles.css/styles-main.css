@@ -12,11 +12,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  width: 100%;
-}
-/*-------mobile----*/
 
+/*-------mobile----*/
 .js-menu-container {
   display: flex;
   flex-direction: column;
@@ -32,6 +29,9 @@ body {
 .is-open {
   display: none;
 }
+.burger-menu {
+  display: none;
+}
 .js-open-menu {
   border: none;
   background-color: transparent;
@@ -45,6 +45,7 @@ svg.js-close-menu {
   top: 10px;
   right: 15px;
   transition: color var(--transition);
+  display: none;
 }
 ul.navigation-burger-menu {
   list-style: none;
@@ -110,7 +111,6 @@ body {
   font-weight: 400;
   color: var(--link-third-color);
 }
-
 ul {
   list-style-type: none;
 }
@@ -132,12 +132,11 @@ a {
   color: var(--link-active-color);
 }
 .global-header {
-  padding: 0px 215px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
   font-family: var(--link-font-family);
   width: 100%;
+  padding-left: 215px;
 }
 
 .global-header div.navigation {
@@ -184,10 +183,6 @@ nav.navbar a {
   color: var(--link-active-color);
 }
 
-.global-header address {
-  display: flex;
-  align-items: center;
-}
 header a.header-contact {
   color: #757575;
   font-size: 14px;
@@ -196,8 +191,10 @@ header a.header-contact {
   line-height: normal;
   letter-spacing: 0.28px;
   text-decoration: none;
-  margin-left: 40px;
-  align-items: center;
+  padding-left: 40px;
+}
+.icon {
+  padding-left: 150px;
 }
 header svg.icon-envelope {
   width: 16px;
@@ -371,7 +368,7 @@ button:focus {
 /* Third Section Styles */
 .third-section {
   background: #f5f4fa;
-  width: 1600px;
+  width: 100%;
   height: 708px;
   flex-shrink: 0;
 }
@@ -479,6 +476,8 @@ main svg.customers {
 .footer {
   display: flex;
   justify-content: center;
+  width: 100%;
+  padding-left: 215px;
 }
 .contact-class {
   flex: 1;
@@ -487,15 +486,14 @@ main svg.customers {
 address.contact-class {
   display: flex;
   flex-direction: column;
-  padding-left: 215px;
   padding-top: 60px;
 }
 div.contact-class {
   padding-top: 85px;
-  padding-right: 900px;
 }
 .social-media {
   padding-bottom: 12px;
+  width: 200px;
 }
 .social-media-footer {
   float: left;
@@ -550,8 +548,8 @@ a.phone {
   margin-bottom: 12px;
 }
 footer div.input {
-  padding-top: 10px;
-  position: relative;
+  padding-top: 72px;
+  width: 100%;
 }
 footer span.input {
   color: #fff;
@@ -596,8 +594,7 @@ footer svg.input {
   flex-shrink: 0;
   color: #fff;
   position: absolute;
-  right: 28px;
-  bottom: 13px;
+  right: 120px;
   cursor: pointer;
 }
 
@@ -908,27 +905,39 @@ div.modal-content form.modal-content div:hover {
 }
 
 @media screen and (max-width: 1200px) {
-  header {
-    padding: 26px 15px;
+  body {
+    width: 100%;
   }
+  .global-header {
+    padding-left: 100px;
+  }
+  .burger-menu {
+    display:none;
+  }
+  .header-contact {
+    text-align: center;
+    margin-top: 10px;
+  }
+  .hero-section {
+    width: 100%;
+  }
+  .icon {
+    text-align: center;
+    margin-top: 10px;
+  }
+
   main .main-section {
-    margin: 26px 15px;
+    gap: 10px;
   }
   main .second-section {
     margin: 214px 15px 0px;
   }
-  main .third-section {
-    padding: 94px 15px;
-  }
-  main section.customers {
-    padding: 94px 15px;
-  }
+  
   .footer {
-    padding: 60px 15px;
+    padding-left: 100px;
   }
 }
 @media screen and (max-width: 768px) {
-
   body {
     width: 100%;
     margin: 0px;
@@ -939,7 +948,227 @@ div.modal-content form.modal-content div:hover {
   .js-menu-container {
     display: none;
   }
+  .global-header {
+    padding: 0;
+    padding-left: 15px;
+  }
+  .global-header div.navigation {
+    flex-direction: column;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .navigation-menu { 
+    display: flex;
+  }
+  .icon {
+    padding-left: 0;
+  }
+   a.header-contact {
+    margin: 0;
+    font-size: 12px;
+    padding-left: 80px;
+  }
+
+  .burger-menu {
+    display:none;
+  }
+  .global-header a.logo-black {
+    font-size: 24px;
+  }
+  .main-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    padding-top: 60px; 
+  }
   
+  .column {
+    width: 100%; 
+    height: auto;
+    padding-bottom: 60px;
+  }
+  
+  .main-section h3,
+  .main-section p {
+    text-align: left; 
+    width: 354px; 
+    padding-left: 15px;
+  }
+  svg.column-class {
+    width: 354px;
+    padding: 0;
+    padding-left: 150px;
+  }
+  .second-section {
+    display: none;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .third-section {
+    background: #f5f4fa;
+    width: 100%;
+    padding: 50px 0;
+  }
+  
+  .third-section ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .team-presentation {
+    width: 100%;
+    width: 354px;
+    height: 536px;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+      0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  }
+  
+  .team-presentation img {
+    width: 100%;
+    width: 354px;
+    height: 374px;
+    flex-shrink: 0;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  
+  .team-presentation h3 {
+    color: var(--link-third-color);
+    font-size: 1em;
+    font-family: var(--link-font-family);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    padding-top: 20px;
+  }
+  
+  .team-presentation p {
+    color: var(--link-another-color);
+    font-size: 1em;
+    font-family: var(--link-font-family);
+    letter-spacing: 0.03em;
+    padding-top: 10px;
+  }
+  
+  .team-media {
+    display: inline-block;
+    margin-right: 10px;
+  }
+  
+  .team-media a svg {
+    width: 22px;
+    height: 22px;
+  }
+  .last-title {
+    padding-top: 0;
+  }
+  div.customers h2 {
+    padding-top: 650px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  main div.customers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    gap: 30px;
+    
+  }
+  .customers h2 {
+    text-align: center;
+    font-family: var(--link-font-family);
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    padding-top: 560px;
+    padding-bottom: 50px;
+  }
+  main svg.customers {
+    width: 226px;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+  }
+  
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 76px;
+    height: 464px;
+  }
+  address.contact-class a {
+    text-align: center;
+  }
+  footer a.logo-white, .logo-label {
+    padding-left: 20px;
+    font-size: 24px;
+  }
+  .address-class, a.phone, a.mail {
+    font-size: 14px;
+    width: 232px;
+  }
+  .social-media {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 14px;
+    padding-left: 65px;
+  }
+  div.contact-class {
+    flex-direction: row;
+    padding-left: 150px;
+    
+  }
+  div.social-media-footer {
+    margin-right: 10px;
+  }
+  .input {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 110px;
+  }
+  
+  .input input[type="email"] {
+    width: 450px;
+    padding-top: 20px;
+  }
+  
+  .input .submit-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .input .submit-button:hover {
+    background-color: #0056b3;
+  }
+
 }
 @media screen and (min-width: 428px) and (max-width: 480px) {
   /********** ********** **********     index.html     ********** ********** **********/
@@ -956,8 +1185,8 @@ div.modal-content form.modal-content div:hover {
   .global-header {
     display: flex;
     justify-content: left;
-    margin-left: 16px;
-    margin-right: 10px;
+    padding: 0;
+    padding-left: 15px;
   }
   .icon,
   .header-contact {
@@ -972,9 +1201,8 @@ div.modal-content form.modal-content div:hover {
   button.js-open-menu svg {
     width: 40px;
     height: 40px;
-    margin-left: 140px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-left: 160px;
+ 
   }
   header a.header-contact {
     display: none;
@@ -982,85 +1210,7 @@ div.modal-content form.modal-content div:hover {
   header address {
     display: none;
   }
-  body div.js-menu-container {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    width: 100%;
-    height: 800px;
-    background-color: white;
-    z-index: 4;
-    padding: 48px 40px;
-  }
-  body div.is-open {
-    display: none;
-  }
-  header button.js-open-menu {
-    border: none;
-    background-color: transparent;
-    transition: color var(--transition);
-  }
-  body div svg.js-close-menu {
-    position: absolute;
-    flex-shrink: 0;
-    transition: color var(--transition);
-  }
-  body div ul.navigation-burger-menu {
-    list-style: none;
-    margin: 0px;
-    padding: 0px;
-    display: flex;
-    flex-direction: column;
-    gap: 22px;
-  }
-  body div a.navigation-burger-menu {
-    text-decoration: none;
-    color: #212121;
-    font-size: 35px;
-    font-weight: 500;
-    letter-spacing: 0.8px;
-    transition: color var(--transition);
-  }
-  body div a.mobile-menu-phone-number {
-    color: #2196f3;
-    font-size: 30px;
-    font-weight: 500;
-    letter-spacing: 0.68px;
-    text-decoration: none;
-    font-style: normal;
-    display: inline-block;
-    margin-top: 60%;
-  }
-  body div a.mobile-menu-mail {
-    color: #757575;
-    font-size: 21px;
-    font-style: normal;
-    font-weight: 500;
-    letter-spacing: 0.48px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 32px;
-  }
-  body div.mobile-social-media {
-    display: flex;
-    gap: 10px;
-    margin-top: 64px;
-  }
-  body a.mobile-social-media {
-    color: #2196f3;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 22px; /* 122.222% */
-    letter-spacing: 0.36px;
-    text-decoration: none;
-  }
-  body span.dash {
-    color: #21212133;
-    font-size: large;
-  }
+
   header button.js-open-menu {
     display: contents;
     color: #212121;
@@ -1168,15 +1318,17 @@ div.modal-content form.modal-content div:hover {
 
   div.contact-class {
     padding-right: 70px;
-    padding-left: 127px;
+    padding-left: 105px;
     padding-top: 15px;
     text-align: center;
+    padding-bottom: 60px;
   }
   address.contact-class {
+    display: flex;
+    justify-content: center;
     text-align: center;
     padding-top: 15px;
-    padding-right: 67px;
-    padding-left: 135px;
+    padding-left: 115px;
   }
   footer a.logo-white {
     padding-top: 60px;
@@ -1187,7 +1339,6 @@ div.modal-content form.modal-content div:hover {
     float: left;
     text-align: center;
     margin: 10px;
-    
   }
   footer div.input {
     padding-top: 0;
@@ -1202,7 +1353,7 @@ div.modal-content form.modal-content div:hover {
   }
   footer svg.input {
     right: 32%;
-    padding-top: 60px;
+    bottom: 75px;
   }
 
   /********** ********** **********     JavaScript - modal.js     ********** ********** **********/
@@ -1242,4 +1393,3 @@ div.modal-content form.modal-content div:hover {
     font-size: 11px;
   }
 }
-
