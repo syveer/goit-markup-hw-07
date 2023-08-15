@@ -903,7 +903,228 @@ div.modal-content svg.close-button:hover,
 div.modal-content form.modal-content div:hover {
   color: var(--link-active-color);
 }
+@media screen and (min-width: 428px) and (max-width: 480px) {
+  /********** ********** **********     index.html     ********** ********** **********/
+  body {
+    width: 100%;
+    margin: 0px;
+  }
+  body::-webkit-scrollbar {
+    display: none;
+  }
+  .navbar {
+    display: none;
+  }
+  .global-header {
+    display: flex;
+    justify-content: left;
+    padding: 0;
+    padding-left: 15px;
+  }
+  .icon,
+  .header-contact {
+    display: none;
+  }
+  .global-header a.logo-black {
+    font-size: 24px;
+    padding-left: 15px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  button.js-open-menu svg {
+    width: 40px;
+    height: 40px;
+    margin-left: 160px;
+ 
+  }
+  header a.header-contact {
+    display: none;
+  }
+  header address {
+    display: none;
+  }
 
+  header button.js-open-menu {
+    display: contents;
+    color: #212121;
+  }
+  .logo {
+    width: 100%;
+  }
+  .container .hero-section {
+    width: 100%;
+    max-width: 480px;
+    min-height: 428px;
+    height: 400px;
+    flex-shrink: 0;
+    background: url(../images/Headerimg.png);
+  }
+  .hero-section h1 {
+    font-size: 26px;
+    width: 360px;
+  }
+  .main-section {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+  main div.column {
+    height: 120px;
+    flex-shrink: 0;
+    margin-bottom: 136px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  main svg.column-class {
+    width: 100%;
+    padding-left: 170px;
+  }
+  .main-section h3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 105px;
+    width: 300px;
+  }
+  .main-section p {
+    width: 450px;
+    height: 50px;
+    flex-shrink: 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 60px;
+  }
+  .second-section {
+    display: none;
+  }
+  .third-section {
+    background: #f5f4fa;
+    width: 480px;
+    height: 2811px;
+    flex-shrink: 0;
+    padding-left: 15px;
+    padding-top: 60px;
+  }
+  .last-title {
+    padding-top: 0;
+  }
+  .team-img {
+    width: 420px;
+    height: 430px;
+    flex-shrink: 0;
+  }
+
+  main .third-section ul {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .team-presentation {
+    width: 420px;
+    height: 622px;
+    flex-shrink: 0;
+  }
+  .customers h2 {
+    padding-left: 83px;
+  }
+  .customers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  main svg.customers {
+    flex-basis: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    flex-shrink: 0;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    height: 604px;
+    flex-shrink: 0;
+  }
+
+  div.contact-class {
+    padding-right: 70px;
+    padding-left: 105px;
+    padding-top: 15px;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  address.contact-class {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 115px;
+  }
+  footer a.logo-white {
+    padding-top: 60px;
+    padding-bottom: 28px;
+    padding-left: 40px;
+  }
+  div.social-media-footer {
+    float: left;
+    text-align: center;
+    margin: 10px;
+  }
+  footer div.input {
+    padding-top: 0;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+  footer input.input {
+    width: 450px;
+    height: 50px;
+    flex-shrink: 0;
+    margin-bottom: 20px;
+  }
+  footer svg.input {
+    right: 32%;
+    bottom: 75px;
+  }
+
+  /********** ********** **********     JavaScript - modal.js     ********** ********** **********/
+  div.modal {
+    top: 400px;
+  }
+  div.modal-content {
+    width: 100%;
+    height: 609px;
+  }
+  div.modal-content h2 {
+    width: 320px;
+    color: #212121;
+    text-align: center;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+  }
+  input.modal-content {
+    width: 100%;
+    height: 40px;
+  }
+  form textarea.comments {
+    width: 100%;
+  }
+  form svg.terms-n-conditions {
+    width: 14px;
+    height: 15px;
+    flex-shrink: 0;
+  }
+  form span.terms-n-conditions {
+    width: 93%;
+    font-size: 10px;
+  }
+  form span.terms-n-conditions a {
+    width: 100%;
+    font-size: 11px;
+  }
+}
 @media screen and (max-width: 1200px) {
   body {
     width: 100%;
@@ -1170,226 +1391,4 @@ div.modal-content form.modal-content div:hover {
   }
 
 }
-@media screen and (min-width: 428px) and (max-width: 480px) {
-  /********** ********** **********     index.html     ********** ********** **********/
-  body {
-    width: 100%;
-    margin: 0px;
-  }
-  body::-webkit-scrollbar {
-    display: none;
-  }
-  .navbar {
-    display: none;
-  }
-  .global-header {
-    display: flex;
-    justify-content: left;
-    padding: 0;
-    padding-left: 15px;
-  }
-  .icon,
-  .header-contact {
-    display: none;
-  }
-  .global-header a.logo-black {
-    font-size: 24px;
-    padding-left: 15px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-  button.js-open-menu svg {
-    width: 40px;
-    height: 40px;
-    margin-left: 160px;
- 
-  }
-  header a.header-contact {
-    display: none;
-  }
-  header address {
-    display: none;
-  }
 
-  header button.js-open-menu {
-    display: contents;
-    color: #212121;
-  }
-  .logo {
-    width: 100%;
-  }
-  .container .hero-section {
-    width: 100%;
-    max-width: 480px;
-    min-height: 428px;
-    height: 400px;
-    flex-shrink: 0;
-    background: url(../images/Headerimg.png);
-  }
-  .hero-section h1 {
-    font-size: 26px;
-    width: 360px;
-  }
-  .main-section {
-    width: 100%;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-  }
-  main div.column {
-    height: 120px;
-    flex-shrink: 0;
-    margin-bottom: 136px;
-    width: 100%;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-  main svg.column-class {
-    width: 100%;
-    padding-left: 170px;
-  }
-  .main-section h3 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-left: 105px;
-    width: 300px;
-  }
-  .main-section p {
-    width: 450px;
-    height: 50px;
-    flex-shrink: 0;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 60px;
-  }
-  .second-section {
-    display: none;
-  }
-  .third-section {
-    background: #f5f4fa;
-    width: 480px;
-    height: 2811px;
-    flex-shrink: 0;
-    padding-left: 15px;
-    padding-top: 60px;
-  }
-  .last-title {
-    padding-top: 0;
-  }
-  .team-img {
-    width: 420px;
-    height: 430px;
-    flex-shrink: 0;
-  }
-
-  main .third-section ul {
-    width: 100%;
-    margin: 0px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-  }
-  .team-presentation {
-    width: 420px;
-    height: 622px;
-    flex-shrink: 0;
-  }
-  .customers h2 {
-    padding-left: 83px;
-  }
-  .customers {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  main svg.customers {
-    flex-basis: calc(33.33% - 10px);
-    margin-bottom: 20px;
-    flex-shrink: 0;
-  }
-
-  .footer {
-    display: flex;
-    flex-direction: column;
-    height: 604px;
-    flex-shrink: 0;
-  }
-
-  div.contact-class {
-    padding-right: 70px;
-    padding-left: 105px;
-    padding-top: 15px;
-    text-align: center;
-    padding-bottom: 60px;
-  }
-  address.contact-class {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding-top: 15px;
-    padding-left: 115px;
-  }
-  footer a.logo-white {
-    padding-top: 60px;
-    padding-bottom: 28px;
-    padding-left: 40px;
-  }
-  div.social-media-footer {
-    float: left;
-    text-align: center;
-    margin: 10px;
-  }
-  footer div.input {
-    padding-top: 0;
-    text-align: center;
-    padding-bottom: 60px;
-  }
-  footer input.input {
-    width: 450px;
-    height: 50px;
-    flex-shrink: 0;
-    margin-bottom: 20px;
-  }
-  footer svg.input {
-    right: 32%;
-    bottom: 75px;
-  }
-
-  /********** ********** **********     JavaScript - modal.js     ********** ********** **********/
-  div.modal {
-    top: 400px;
-  }
-  div.modal-content {
-    width: 100%;
-    height: 609px;
-  }
-  div.modal-content h2 {
-    width: 320px;
-    color: #212121;
-    text-align: center;
-    font-size: 17px;
-    font-weight: 700;
-    letter-spacing: 0.6px;
-  }
-  input.modal-content {
-    width: 100%;
-    height: 40px;
-  }
-  form textarea.comments {
-    width: 100%;
-  }
-  form svg.terms-n-conditions {
-    width: 14px;
-    height: 15px;
-    flex-shrink: 0;
-  }
-  form span.terms-n-conditions {
-    width: 93%;
-    font-size: 10px;
-  }
-  form span.terms-n-conditions a {
-    width: 100%;
-    font-size: 11px;
-  }
-}
