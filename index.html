@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,11 +11,11 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css/styles-main.css" />
+    <link rel="stylesheet" href="styles.css/modern-normalize.css" />
     <link rel="stylesheet" href="SVG/symbol-defs.svg" />
   </head>
   <body>
-    <!--menu-->
-    <div class="is-open js-menu-container ">
+    <div class="is-open js-menu-container">
       <svg class="js-close-menu">
         <use href="./SVG/symbol-defs.svg#icon-close-menu"></use>
       </svg>
@@ -60,487 +60,381 @@
         >
       </div>
     </div>
-    <!--First row-->
-    <div class="container">
-      <header class="global-header">
-        <div class="logo">
-          <a class="logo-black" href="index.html">
-            <span class="logo">Web</span>Studio
-          </a>
-        </div>
-        <nav class="navbar">
-          <ul class="navigation-menu">
-            <li>
-              <a class="studio" href="index.html">Studio</a>
-            </li>
-            <li>
-              <a class="portofolio" href="portofolio.html">Portfolio</a>
-            </li>
-            <li>
-              <a class="contact-nav" href="contact.html">Contacts</a>
-            </li>
-          </ul>
-        </nav>
+    <header>
+      <div class="header">
         <div class="navigation">
-          <div class="icon">
-            <a class="header-contact" href="mailto:info@devstudio.com">
-              <svg class="icon-envelope">
-                <use xlink:href="SVG/symbol-defs.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
+          <div class="logo">
+            <a class="logo-black" href="index.html"
+              ><span class="logo">Web</span>Studio</a
+            >
           </div>
-          <div class="header-contact">
-            <a class="header-contact" href="tel:+12127724150">
-              <svg class="icon-smartphone">
-                <use xlink:href="SVG/symbol-defs.svg#icon-smartphone"></use>
-              </svg>
-              +1 212-772-4150
-            </a>
-          </div>
+          <nav>
+            <ul>
+              <li>
+                <a class="navigation-menu active" href="index.html">Studio</a>
+              </li>
+              <li>
+                <a class="navigation-menu" href="portofolio.html">Portfolio</a>
+              </li>
+              <li>
+                <a class="navigation-menu" href="contact.html">Contacts</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <button class="js-open-menu" aria-expanded="true">
+        <address>
+          <a class="header-contact" href="mailto:info@devstudio.com"
+            ><svg class="header-contact-mail" width="16px" height="12px">
+              <use xlink:href="SVG/symbol-defs.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+          <a class="header-contact" href="tel:+12127724150"
+            ><svg class="header-contact-smartphone" width="10px" height="16px">
+              <use xlink:href="SVG/symbol-defs.svg#icon-smartphone"></use>
+            </svg>
+            +1 212-772-4150</a
+          >
+        </address>
+        <button class="js-open-menu">
           <svg class="burger-menu">
             <use href="./SVG/symbol-defs.svg#icon-burger-menu"></use>
           </svg>
         </button>
-      </header>
-    </div>
-    <!--main section-->
+      </div>
+      <div class="title">
+        <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+        <button class="main-button" data-modal-open type="button">
+          Request our service
+        </button>
+      </div>
+    </header>
     <main>
-      <div class="container">
-        <section class="hero-section">
-          <h1 class="hero-title">
-            EFFECTIVE SOLUTIONS FOR <br/>
-            YOUR BUSINESS
-          </h1>
-          <button data-modal-open type="button" >
-            Request our services
-          </button>
-        </section>
+      <div class="performance">
+        <div class="performance-cards">
+          <svg class="performance-cards">
+            <use xlink:href="SVG/symbol-defs.svg#icon-antenna"></use>
+          </svg>
+          <h3>ATTENTION TO DETAILS</h3>
+          <p>
+            We go into all the details and processes of your business to develop
+            a customized solution.
+          </p>
+        </div>
+        <div class="performance-cards">
+          <svg class="performance-cards">
+            <use xlink:href="SVG/symbol-defs.svg#icon-clock"></use>
+          </svg>
+          <h3>PUNCTUALITI</h3>
+          <p>
+            With us, you can feel safe and secure. An important principle of the
+            company: respect your time and deadlines.
+          </p>
+        </div>
+        <div class="performance-cards">
+          <svg class="performance-cards">
+            <use xlink:href="SVG/symbol-defs.svg#icon-diagram"></use>
+          </svg>
+          <h3>PLANNING</h3>
+          <p>
+            You will be able to observe and participate in every phase of
+            solution development and implementation.
+          </p>
+        </div>
+        <div class="performance-cards">
+          <svg class="performance-cards">
+            <use xlink:href="SVG/symbol-defs.svg#icon-astronaut"></use>
+          </svg>
+          <h3>MODERN TECHNOLOGIES</h3>
+          <p>
+            We use innovative tools to solve assigned tasks. It's time to
+            simplify work processes.
+          </p>
+        </div>
       </div>
-      <div class="container">
-        <section class="main-section">
-          <div class="column">
-            <svg class="column-class">
-              <use
-                xlink:href="SVG/symbol-defs.svg#icon-antenna"
-                width="70px"
-              ></use>
-            </svg>
-            <h3 class="sub-title">ATTENTION TO DETAILS</h3>
-            <p class="paragraph-class">
-              We go into all the details and processes of your business to
-              develop a customized solution.
-            </p>
+      <section class="images">
+        <h2>What We Do</h2>
+        <ul class="images">
+          <li>
+            <img src="images/img (1).jpg" alt="Developer writing cod" />
+            <span class="images">DESKTOP APPS</span>
+          </li>
+          <li>
+            <img
+              src="images/img1.jpg"
+              alt="Developer styling a webpage"
+            />
+            <span class="images">Mobile APPS</span>
+          </li>
+          <li>
+            <img
+              src="images/img2.jpg"
+              alt="Developer styling a webpage"
+            />
+            <span class="images">DESIGN SOLUTIONS</span>
+          </li>
+        </ul>
+      </section>
+      <section class="team">
+        <h2>Our Team</h2>
+        <div class="team">
+          <div class="teammates design">
+            <strong class="teammate-name">Christopher Walker</strong>
+            <br />
+            <span class="teammate-function">Product Designer</span>
+            <br />
+            <ul class="social-media-container">
+              <li class="team-social-media">
+                <a href="https://www.instagram.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.twitter.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.facebook.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.linkedin.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="column">
-            <svg class="column-class">
-              <use
-                xlink:href="SVG/symbol-defs.svg#icon-clock"
-                width="70px"
-              ></use>
-            </svg>
-            <h3 class="sub-title">PUNCTUALITY</h3>
-            <p class="paragraph-class">
-              With us, you can feel safe and secure. An important principle of
-              the company: respect your time and deadlines.
-            </p>
+          <div class="teammates developer">
+            <strong class="teammate-name">Kylie Evans</strong>
+            <br />
+            <span class="teammate-function">Frontend Developer</span>
+            <br />
+            <ul class="social-media-container">
+              <li class="team-social-media">
+                <a href="https://www.instagram.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.twitter.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.facebook.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.linkedin.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="column">
-            <svg class="column-class">
-              <use
-                xlink:href="SVG/symbol-defs.svg#icon-diagram"
-                width="70px"
-              ></use>
-            </svg>
-            <h3 class="sub-title">PLANNING</h3>
-            <p class="paragraph-class">
-              You will be able to observe and participate in every phase of
-              solution development and implementation.
-            </p>
+          <div class="teammates marketing">
+            <strong class="teammate-name">Ryan Harris</strong>
+            <br />
+            <span class="teammate-function">Marketing</span>
+            <br />
+            <ul class="social-media-container">
+              <li class="team-social-media">
+                <a href="https://www.instagram.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.twitter.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.facebook.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.linkedin.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="column">
-            <svg class="column-class">
-              <use
-                xlink:href="SVG/symbol-defs.svg#icon-astronaut"
-                width="70px"
-              ></use>
-            </svg>
-            <h3 class="sub-title">MODERN TECHNOLOGIES</h3>
-            <p class="paragraph-class">
-              We use innovative tools to solve assigned tasks. It's time to
-              simplify work processes.
-            </p>
+          <div class="teammates designer">
+            <strong class="teammate-name">Tyler Moore</strong>
+            <br />
+            <span class="teammate-function">UI Designer</span>
+            <br />
+            <ul class="social-media-container">
+              <li class="team-social-media">
+                <a href="https://www.instagram.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.twitter.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.facebook.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="team-social-media">
+                <a href="https://www.linkedin.com/">
+                  <svg class="team-social-media" width="20px" height="20px">
+                    <use xlink:href="SVG/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-        </section>
-      </div>
-      <div class="container">
-        <section class="second-section">
-          <h2 class="title">What we do</h2>
-          <div class="image">
-            <div class="wwdparent">
-              <a href="index.html">
-                <img
-                  src="images/img (1).jpg"
-                  alt="Person writing on keyboard"
-                  class="images"
-                  width="370"
-                  height="294"
-                />
-              </a>
-              <div class="wwdchild">
-                <p class="wwdtxt">DESKTOP APPS</p>
-              </div>
-            </div>
-            <div class="wwdparent">
-              <a href="index.html">
-                <img
-                  src="images/img1.jpg"
-                  alt="Person working on computer"
-                  class="images"
-                  width="370"
-                  height="294"
-                />
-              </a>
-              <div class="wwdchild">
-                <p class="wwdtxt">MOBILE APPS</p>
-              </div>
-            </div>
-            <div class="wwdparent">
-              <a href="index.html">
-                <img
-                  src="images/img2.jpg"
-                  alt="Person using tablet"
-                  class="images"
-                  width="370"
-                  height="294"
-                />
-              </a>
-              <div class="wwdchild">
-                <p class="wwdtxt">DESIGN SOLUTIONS</p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="container">
-        <section class="third-section">
-          <h2 class="last-title">Our Team</h2>
-          <div class="team">
-            <div class="team-design">
-              <ul class="Team">
-                <li class="team-presentation">
-                  <a href="index.html">
-                    <img
-                      src="images/ChristopherWalker.jpg"
-                      class="team-img"
-                      alt="Team Member"
-                      width="270"
-                      height="260"
-                    />
-                  </a>
-                  <h3>Christopher Walker</h3>
-                  <p>Product Designer</p>
-                  <div class="social-media-container">
-                    <div class="team-media">
-                      <a href="https://www.instagram.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-instagram"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.twitter.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-twitter"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.facebook.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-facebook"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.linkedin.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-linkedin"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </li>
-                <li class="team-presentation">
-                  <a href="index.html">
-                    <img
-                      src="images/KylieEvans.jpg"
-                      class="team-img"
-                      alt="Team Member"
-                      width="270"
-                      height="260"
-                    />
-                  </a>
-                  <h3>Kylie Evans</h3>
-                  <p>Frontend Developer</p>
-                  <div class="social-media-container">
-                    <div class="team-media">
-                      <a href="https://www.instagram.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-instagram"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.twitter.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-twitter"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.facebook.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-facebook"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.linkedin.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-linkedin"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </li>
-                <li class="team-presentation">
-                  <a href="index.html">
-                    <img
-                      src="images/RyanHarris.jpg"
-                      class="team-img"
-                      alt="Team Member"
-                      width="270"
-                      height="260"
-                    />
-                  </a>
-                  <h3>Ryan Harris</h3>
-                  <p>Marketing</p>
-                  <div class="social-media-container">
-                    <div class="team-media">
-                      <a href="https://www.instagram.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-instagram"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.twitter.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-twitter"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.facebook.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-facebook"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.linkedin.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-linkedin"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </li>
-                <li class="team-presentation">
-                  <a href="index.html">
-                    <img
-                      src="images/TylerMoore.jpg"
-                      class="team-img"
-                      alt="Team Member"
-                      width="270"
-                      height="260"
-                    />
-                  </a>
-                  <h3>Tyler Moore</h3>
-                  <p>UI Designer</p>
-                  <div class="social-media-container">
-                    <div class="team-media">
-                      <a href="https://www.instagram.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-instagram"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.twitter.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-twitter"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.facebook.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-facebook"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="team-media">
-                      <a href="https://www.linkedin.com/">
-                        <svg class="team-media" width="22px" height="22px">
-                          <use
-                            xlink:href="SVG/symbol-defs.svg#icon-linkedin"
-                          ></use>
-                        </svg>
-                      </a>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div class="container">
-        <section class="customers">
-          <h2>Regular Customers</h2>
-          <div class="customers">
+        </div>
+      </section>
+      <section class="customers">
+        <h2>Regular Customers</h2>
+        <ul class="customers">
+          <li class="customers">
             <svg class="customers">
               <use xlink:href="SVG/symbol-defs.svg#icon-Logo1"></use>
             </svg>
+          </li>
+          <li class="customers">
             <svg class="customers">
               <use xlink:href="SVG/symbol-defs.svg#icon-Logo2"></use>
             </svg>
+          </li>
+          <li class="customers">
             <svg class="customers">
               <use xlink:href="SVG/symbol-defs.svg#icon-Logo3"></use>
             </svg>
+          </li>
+          <li class="customers">
             <svg class="customers">
               <use xlink:href="SVG/symbol-defs.svg#icon-Logo6"></use>
             </svg>
+          </li>
+          <li class="customers">
             <svg class="customers">
               <use xlink:href="SVG/symbol-defs.svg#icon-logo5"></use>
             </svg>
+          </li>
+          <li class="customers">
             <svg class="customers">
               <use xlink:href="SVG/symbol-defs.svg#icon-Logo4"></use>
             </svg>
-          </div>
-        </section>
-      </div>
+          </li>
+        </ul>
+      </section>
     </main>
-    <div class="container">
-      <footer class="footer">
-        <address class="contact-class">
-          <a class="logo-white" href="/"
-            ><span class="logo-label">Web</span>Studio</a
-          >
-          <a class="address-class" href="695 Park Ave, NY 10065, USA"
-            >695 Park Ave, NY 10065, USA</a
-          >
-          <a class="mail" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="phone" href="tel:+12127724150">+1212-772-4150</a>
+    <footer>
+      <div class="footer-container">
+        <a class="logo-white" href="/"><span class="logo">Web</span>Studio</a>
+        <address>
+          <div class="address">
+            695 Park Ave, <abbr>NY</abbr> 10065, <abbr>USA</abbr><br />
+          </div>
+          <div class="footer-contact">
+            <a class="footer-contact" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            ><br />
+            <a class="footer-contact" href="tel:+12127724150">+1212-772-4150</a>
+          </div>
         </address>
-        <div class="contact-class">
-          <div class="social-media">FIND US ON</div>
-          <div class="social-media-footer">
-            <a href="https://www.instagram.com/">
-              <svg class="media" width="22px" height="22px">
-                <use xlink:href="SVG/symbol-defs.svg#icon-instagram"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="social-media-footer">
-            <a href="https://www.twitter.com/">
-              <svg class="media" width="22px" height="22px">
-                <use xlink:href="SVG/symbol-defs.svg#icon-twitter"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="social-media-footer">
-            <a href="https://www.facebook.com/">
-              <svg class="media" width="22px" height="22px">
-                <use xlink:href="SVG/symbol-defs.svg#icon-facebook"></use>
-              </svg>
-            </a>
-          </div>
-          <div class="social-media-footer">
-            <a href="https://www.linkedin.com/">
-              <svg class="media" width="22px" height="22px">
-                <use xlink:href="SVG/symbol-defs.svg#icon-linkedin"></use>
-              </svg>
-            </a>
-          </div>
+      </div>
+      <div class="social-media-container">
+        <span class="social-media">FIND US ON</span><br />
+        <div class="social-media">
+          <a href="https://www.instagram.com/">
+            <svg class="social-media" width="20px" height="20px">
+              <use xlink:href="SVG/symbol-defs.svg#icon-instagram"></use>
+            </svg>
+          </a>
         </div>
-        <div class="input">
-          <span class="input">Subscribe to the newsletter</span>
-          <form>
+        <div class="social-media">
+          <a href="https://www.twitter.com/">
+            <svg class="social-media" width="20px" height="20px">
+              <use xlink:href="SVG/symbol-defs.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://www.facebook.com/">
+            <svg class="social-media" width="20px" height="20px">
+              <use xlink:href="SVG/symbol-defs.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </div>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/">
+            <svg class="social-media" width="20px" height="20px">
+              <use xlink:href="SVG/symbol-defs.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="input">
+        <span class="input">Subscribe to the newsletter</span>
+        <form>
+          <input
+            class="input"
+            type="email"
+            id="email"
+            name="email"
+            placeholder="E-mail"
+            required
+          />
+          <label for="submit">
             <input
-              class="input"
-              type="email"
-              id="email"
-              name="email"
-              placeholder="E-mail"
-              required
+              class="submit-button"
+              id="submit"
+              type="submit"
+              value="Subscribe"
             />
-            <label for="submit">
-              <input
-                class="submit-button"
-                id="submit"
-                type="submit"
-                value="Subscribe"
-              />
-              <svg class="input">
-                <use href="./SVG/symbol-defs.svg#icon-send"></use>
-              </svg>
-            </label>
-          </form>
-        </div>
-      </footer>
-    </div>
-    <!-- modal window -->
+            <svg class="input">
+              <use href="./SVG/symbol-defs.svg#icon-send"></use>
+            </svg>
+          </label>
+        </form>
+      </div>
+    </footer>
     <div class="modal is-hidden" data-modal>
       <div class="modal-content">
         <button class="close-button" data-modal-close>
-          <svg class="close-button" width="11px" height="11px">
+          <svg class="close-button">
             <use href="./SVG/symbol-defs.svg#icon-close-black"></use>
           </svg>
         </button>
@@ -606,7 +500,7 @@
               required
             />
             <svg class="terms-n-conditions" width="16px" height="15px">
-              <use href="./SVG/symbol-defs.svg#icon-sqare-checkbox"></use>
+              <use href="./images/svg-symbols.svg#icon-sqare-checkbox"></use>
             </svg>
             <span class="terms-n-conditions"
               >I agree with the letter and accept the
