@@ -1230,6 +1230,14 @@ form input.send-button {
   header div.header {
     width: 100%;
     height: 60px;
+    padding: 0;
+    
+  }
+  header h1 {
+    width: 100%;
+  }
+    main section.images {
+    display: none;
   }
   header nav {
     display: none;
